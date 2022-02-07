@@ -1,8 +1,17 @@
 import { useState } from "react";
+import { ColourCombinations } from "../types";
 import Farbfeld from "./Farbfeld";
+import Farbkombination from "./Farbkombination";
 
 function Farbenspiel() {
   const [baseColour, setBaseColour] = useState("#c0ffee");
+  const combinations: ColourCombinations[] = [
+    "analogous",
+    "monochromatic",
+    "tetrad",
+    "splitcomplement",
+    "triad",
+  ];
   return (
     <main>
       <h1>Farbenspiel</h1>
@@ -13,7 +22,9 @@ function Farbenspiel() {
       />
       <Farbfeld colour={baseColour} />
       <ul>
-        <li>Combinations go here</li>
+        {combinations.map((combination) => (
+          <Farbkombination combination={combination as ColourCombinations} />
+        ))}
       </ul>
     </main>
   );
