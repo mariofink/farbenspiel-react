@@ -23,7 +23,12 @@ function Farbenspiel() {
       <ColourField colour={baseColour} />
       <ul>
         {combinations.map((combination) => (
-          <ColourCombination combination={combination as ColourCombinations} />
+          <li>
+            <ColourCombination
+              baseColour={baseColour}
+              combination={combination as ColourCombinations}
+            />
+          </li>
         ))}
       </ul>
     </main>
