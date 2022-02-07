@@ -1,5 +1,9 @@
-function Farbfeld(props: { colour: string }) {
-  return <div style={{ backgroundColor: props.colour }}>{props.colour}</div>;
+type props = {
+  colour: string;
+};
+
+function Farbfeld({ colour }: props): JSX.Element {
+  return <div style={{ backgroundColor: colour }}>{colour}</div>;
 }
 
 export default Farbfeld;
