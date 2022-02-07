@@ -4,8 +4,8 @@ type props = {
   combination: ColourCombinations;
 };
 
-function Farbkombination({ combination }: props) {
+function ColourCombination({ combination }: props) {
   return <div>{combination}</div>;
 }
 
-export default Farbkombination;
+export default ColourCombination;

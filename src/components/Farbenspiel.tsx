@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ColourCombinations } from "../types";
-import Farbfeld from "./Farbfeld";
-import Farbkombination from "./Farbkombination";
+import ColourField from "./ColourField";
+import ColourCombination from "./ColourCombination";
 
 function Farbenspiel() {
   const [baseColour, setBaseColour] = useState("#c0ffee");
@@ -20,10 +20,10 @@ function Farbenspiel() {
         value={baseColour}
         onChange={(e) => setBaseColour(e.target.value)}
       />
-      <Farbfeld colour={baseColour} />
+      <ColourField colour={baseColour} />
       <ul>
         {combinations.map((combination) => (
-          <Farbkombination combination={combination as ColourCombinations} />
+          <ColourCombination combination={combination as ColourCombinations} />
         ))}
       </ul>
     </main>
