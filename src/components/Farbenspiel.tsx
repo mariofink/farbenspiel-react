@@ -1,11 +1,12 @@
 import { useState } from "react";
+import randomColor from "randomcolor";
 import { ColourCombinations } from "../types";
 import ColourField from "./ColourField";
 import ColourCombination from "./ColourCombination";
 import styles from "./Farbenspiel.module.css";
 
 function Farbenspiel() {
-  const [baseColour, setBaseColour] = useState("#c0ffee");
+  const [baseColour, setBaseColour] = useState(randomColor());
   const combinations: ColourCombinations[] = [
     "analogous",
     "monochromatic",
