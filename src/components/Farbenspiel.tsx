@@ -1,7 +1,6 @@
 import { useState } from "react";
 import randomColor from "randomcolor";
 import { ColourCombinations } from "../types";
-import ColourField from "./ColourField";
 import ColourCombination from "./ColourCombination";
 
 function Farbenspiel() {
@@ -22,7 +21,7 @@ function Farbenspiel() {
         value={baseColour}
         onChange={(e) => setBaseColour(e.target.value)}
       />
-      <ul className="h-full bg-red-900">
+      <ul className="h-full">
         {combinations.map((combination) => (
           <li className="h-1/5">
             <ColourCombination
