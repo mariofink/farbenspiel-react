@@ -14,7 +14,7 @@ function Farbenspiel() {
     "triad",
   ];
   return (
-    <main className="text-center">
+    <main className="text-center h-screen bg-white dark:bg-slate-900 dark:text-white">
       <h1 className="text-3xl p-4">Farbenspiel</h1>
       <input
         className="mb-6"

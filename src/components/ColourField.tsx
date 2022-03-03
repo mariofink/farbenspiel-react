@@ -4,7 +4,7 @@ type props = {
 
 function ColourField({ colour }: props): JSX.Element {
   return (
-    <div className="p-8" style={{ backgroundColor: colour }}>
+    <div className="p-8 text-slate-900" style={{ backgroundColor: colour }}>
       {colour}
     </div>
   );
