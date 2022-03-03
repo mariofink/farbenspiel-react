@@ -8,7 +8,7 @@ function ColourField({ colour }: props): JSX.Element {
       className="flex items-center justify-center h-full text-slate-900"
       style={{ backgroundColor: colour }}
     >
-      {colour}
+      <span className="absolute">{colour}</span>
     </div>
   );
 }

@@ -12,7 +12,7 @@ function ColourCombination({ baseColour, combination }: props) {
   return (
     <ul className="flex h-full">
       {colours.map((col) => (
-        <li className="flex-auto">
+        <li className={`flex-auto w-1/${colours.length}`}>
           <ColourField colour={col.toHexString()} />
         </li>
       ))}
