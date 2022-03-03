@@ -2,9 +2,9 @@ import Farbenspiel from "./components/Farbenspiel";
 
 function App() {
   return (
-    <div>
+    <main className="text-center h-screen bg-white dark:bg-slate-900 dark:text-white">
       <Farbenspiel />
-    </div>
+    </main>
   );
 }
 

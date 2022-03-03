@@ -10,15 +10,13 @@ type props = {
 function ColourCombination({ baseColour, combination }: props) {
   const colours: tinycolor.Instance[] = tinycolor(baseColour)[combination]();
   return (
-    <div>
-      <ul className="flex">
-        {colours.map((col) => (
-          <li className="flex-auto">
-            <ColourField colour={col.toHexString()} />
-          </li>
-        ))}
-      </ul>
-    </div>
+    <ul className="flex h-full">
+      {colours.map((col) => (
+        <li className="flex-auto">
+          <ColourField colour={col.toHexString()} />
+        </li>
+      ))}
+    </ul>
   );
 }
 

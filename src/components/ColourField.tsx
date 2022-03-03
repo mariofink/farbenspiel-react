@@ -4,7 +4,10 @@ type props = {
 
 function ColourField({ colour }: props): JSX.Element {
   return (
-    <div className="p-8 text-slate-900" style={{ backgroundColor: colour }}>
+    <div
+      className="flex items-center justify-center h-full text-slate-900"
+      style={{ backgroundColor: colour }}
+    >
       {colour}
     </div>
   );

@@ -14,7 +14,7 @@ function Farbenspiel() {
     "triad",
   ];
   return (
-    <main className="text-center h-screen bg-white dark:bg-slate-900 dark:text-white">
+    <>
       <h1 className="text-3xl p-4">Farbenspiel</h1>
       <input
         className="mb-6"
@@ -22,10 +22,9 @@ function Farbenspiel() {
         value={baseColour}
         onChange={(e) => setBaseColour(e.target.value)}
       />
-      <ColourField colour={baseColour} />
-      <ul>
+      <ul className="h-full bg-red-900">
         {combinations.map((combination) => (
-          <li>
+          <li className="h-1/5">
             <ColourCombination
               baseColour={baseColour}
               combination={combination as ColourCombinations}
@@ -33,7 +32,7 @@ function Farbenspiel() {
           </li>
         ))}
       </ul>
-    </main>
+    </>
   );
 }
 
