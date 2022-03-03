@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/farbenspiel-react/static/css/main.306a2635.css",
+    "main.js": "/farbenspiel-react/static/js/main.cdbade34.js",
+    "static/js/787.9f68193c.chunk.js": "/farbenspiel-react/static/js/787.9f68193c.chunk.js",
+    "index.html": "/farbenspiel-react/index.html",
+    "main.306a2635.css.map": "/farbenspiel-react/static/css/main.306a2635.css.map",
+    "main.cdbade34.js.map": "/farbenspiel-react/static/js/main.cdbade34.js.map",
+    "787.9f68193c.chunk.js.map": "/farbenspiel-react/static/js/787.9f68193c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.306a2635.css",
+    "static/js/main.cdbade34.js"
+  ]
+}
