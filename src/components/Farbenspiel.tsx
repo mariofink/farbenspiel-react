@@ -3,7 +3,6 @@ import randomColor from "randomcolor";
 import { ColourCombinations } from "../types";
 import ColourField from "./ColourField";
 import ColourCombination from "./ColourCombination";
-import styles from "./Farbenspiel.module.css";
 
 function Farbenspiel() {
   const [baseColour, setBaseColour] = useState(randomColor());
@@ -15,15 +14,16 @@ function Farbenspiel() {
     "triad",
   ];
   return (
-    <main>
-      <h1>Farbenspiel</h1>
+    <main className="text-center">
+      <h1 className="text-3xl p-4">Farbenspiel</h1>
       <input
+        className="mb-6"
         type="color"
         value={baseColour}
         onChange={(e) => setBaseColour(e.target.value)}
       />
       <ColourField colour={baseColour} />
-      <ul className={styles.combinations}>
+      <ul>
         {combinations.map((combination) => (
           <li>
             <ColourCombination
